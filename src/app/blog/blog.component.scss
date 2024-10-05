@@ -1,0 +1,21 @@
+.item-img{
+  height: 40%;
+  width: 40%;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.article-row{
+  display: flex;
+}
+.item{
+  display: inline-flex;
+  margin: 5px;
+  border: 1px solid #666;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+.item:hover{
+  background-color: #666;
+}

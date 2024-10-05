@@ -31,8 +31,11 @@
             ],
             "styles": [
               "src/styles.scss"
+
             ],
-            "scripts": [],
+            "scripts": [
+
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -102,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b8461461-ee02-42bb-adbc-ead701c507e1"
   }
 }

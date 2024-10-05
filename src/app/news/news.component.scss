@@ -1,0 +1,90 @@
+//article
+.item-img{
+  display: block;
+  height: 200px;
+  width: 300px;
+ position: relative;
+ left: 20px;
+ top: 5px;
+}
+.article{
+  padding-left: 50px;
+}
+.article-col{
+  display: block;
+  position: relative;
+  width:1900px
+
+}
+.item{
+  position: relative;
+  display: flex;
+  margin: 5px;
+
+  overflow-y: hidden;
+
+}
+.item:hover{
+  cursor: pointer;
+}
+.item>.content>p{
+  width: 575px;
+  height: 200px;
+  // text-overflow:clip;
+  position: relative;
+  left: 50px;
+  top: -10px;
+}
+@media screen and (max-width: 768px) {
+  .w-50 {
+    width: 100%; /* Khi màn hình nhỏ hơn, hiển thị toàn bộ bề rộng */
+  }
+}
+.content{
+  display: table-column;
+}
+.title{
+  position: relative;
+  left: 50px;
+  p{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
+.link {
+  display: flex; /* Sử dụng flexbox để hiển thị hàng */
+  justify-content: center; /* Căn giữa các phần tử theo chiều ngang */
+  margin: 20px 0; /* Khoảng cách từ trên và dưới */
+}
+
+.link ul {
+  list-style-type: none; /* Xóa dấu chấm đầu dòng */
+  padding: 0; /* Xóa padding mặc định */
+  display: flex; /* Hiển thị các mục trong danh sách trên một hàng */
+}
+
+.link li {
+  margin: 0 10px; /* Khoảng cách bên trái và bên phải cho mỗi mục */
+  position: relative; /* Để có thể thêm border */
+}
+
+.link li:not(:last-child)::after {
+  content: ""; /* Tạo border */
+  position: absolute;
+  right: -5px; /* Vị trí border bên phải */
+  top: 50%; /* Căn giữa chiều dọc */
+  transform: translateY(-50%); /* Điều chỉnh vị trí để chính xác giữa */
+  height: 20px; /* Chiều cao của border */
+  width: 1px; /* Độ dày của border */
+  background: #000; /* Màu của border */
+}
+
+.link a {
+  text-decoration: none; /* Xóa gạch chân */
+  color: #000; /* Màu chữ */
+  padding: 10px; /* Khoảng cách trong các liên kết */
+}
+.link a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
